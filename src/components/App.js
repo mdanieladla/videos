@@ -3,7 +3,10 @@ import SearchBar from './SearchBar';
 import youtube from '../apis/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
-
+//images
+import youtubePic from '../images/youtube.png';
+//style
+import '../style/App.css';
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
@@ -31,6 +34,23 @@ class App extends React.Component {
   render() {
     return (
       <div className='ui container'>
+        <div className='title-div'>
+          <img
+            src={youtubePic}
+            className='camera-svg'
+            alt='camera svg'
+            width='70'
+            height='70'
+          />
+          <h1 className='title'>Video browser</h1>
+          <img
+            src={youtubePic}
+            className='camera-svg'
+            alt='camera-svg'
+            width='70'
+            height='70'
+          />
+        </div>
         <SearchBar onFormSubmit={this.handleTermSubmit} />
         <div className='ui grid'>
           <div className='ui row'>

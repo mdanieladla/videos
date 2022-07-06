@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import youtube from '../apis/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
+import Footer from './Footer';
 //images
 import youtubePic from '../images/youtube.png';
 //style
@@ -53,11 +54,13 @@ class App extends React.Component {
         </div>
         <SearchBar onFormSubmit={this.handleTermSubmit} />
         <div className='ui grid'>
-          <div className='ui row'>
-            <div className='eleven wide column'>
+          <div className='ui test'>
+            <div className='video-detail'>
+              {/* <div className='eleven wide column'> */}
               <VideoDetail video={this.state.selectedVideo} />
             </div>
-            <div className='five wide column'>
+            <div className='video-list'>
+              {/* <div className='five wide column'> */}
               <VideoList
                 onVideoSelect={this.handleVideoSelect}
                 videos={this.state.videos}

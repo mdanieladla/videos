@@ -4,3 +4,34 @@
     display: flex;
     justify-content: space-around;
 }
+
+.test{
+    display: grid;
+    grid-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.ui .grid {
+    margin-top: 20px;
+}
+
+
+@media all and (min-width: 768px) {
+    .test{
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        grid-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    
+    .video-list{
+        grid-column-start: 2;
+    }
+}
+
+/*no estoy segura de que funcione esto, comprobar*/
+@media all and (mi-width: 1024px) {
+    .test{
+        grid-template-columns: 1fr 375px;
+    }
+}

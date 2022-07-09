@@ -12,7 +12,7 @@ class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
-    this.handleTermSubmit('dogs');
+    this.handleTermSubmit('avicii');
   }
 
   handleTermSubmit = async (term) => {
@@ -54,13 +54,12 @@ class App extends React.Component {
         </div>
         <SearchBar onFormSubmit={this.handleTermSubmit} />
         <div className='ui grid'>
-          <div className='ui test'>
+          <div className='ui video-grid'>
             <div className='video-detail'>
               {/* <div className='eleven wide column'> */}
               <VideoDetail video={this.state.selectedVideo} />
             </div>
             <div className='video-list'>
-              {/* <div className='five wide column'> */}
               <VideoList
                 onVideoSelect={this.handleVideoSelect}
                 videos={this.state.videos}

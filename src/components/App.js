@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import youtube from '../apis/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
-import Footer from './Footer';
+
 //images
 import youtubePic from '../images/youtube.png';
 //style

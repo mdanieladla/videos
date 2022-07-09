@@ -20,7 +20,7 @@ This is a video browser where you can search for videos from Youtube API and whe
 
 For example, type dogs in the search bar and hit enter, then you will have a good day :)
 
-With this project I am consolidating my knowledge about React (class based components).
+With this project I am consolidating my knowledge about React.
 
 ## Built with
 
